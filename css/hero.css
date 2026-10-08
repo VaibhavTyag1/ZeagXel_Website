@@ -1,0 +1,1363 @@
+/* =====================================================
+   ZEAGXEL
+   HERO
+===================================================== */
+
+.hero {
+
+    position: relative;
+
+    width: 100%;
+
+    height:
+        calc(100vh - 90px);
+
+    min-height: 650px;
+
+    margin-top: 90px;
+
+    overflow: hidden;
+
+    background:
+        #050608;
+
+}
+
+
+/* =====================================================
+   BACKGROUND
+===================================================== */
+
+.hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-image:
+        url("../assets/images/hero/hero-house.jpg");
+
+    background-size:
+        cover;
+
+    background-position:
+        center center;
+
+    background-repeat:
+        no-repeat;
+
+    transform:
+        scale(1.04);
+
+    z-index: 0;
+
+    animation:
+        heroImageReveal
+        2s
+        cubic-bezier(
+            0.2,
+            0.7,
+            0.2,
+            1
+        )
+        forwards;
+
+}
+
+
+/* =====================================================
+   DARK OVERLAY
+===================================================== */
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+
+            rgba(
+                5,
+                6,
+                8,
+                0.58
+            ) 0%,
+
+            rgba(
+                5,
+                6,
+                8,
+                0.64
+            ) 20%,
+
+            rgba(
+                5,
+                6,
+                8,
+                0.76
+            ) 38%,
+
+            rgba(
+                5,
+                6,
+                8,
+                0.88
+            ) 52%,
+
+            rgba(
+                5,
+                6,
+                8,
+                0.96
+            ) 67%,
+
+            #050608 100%
+        );
+
+    z-index: 1;
+
+}
+
+
+/* =====================================================
+   VIGNETTE
+===================================================== */
+
+.hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+
+            rgba(
+                0,
+                0,
+                0,
+                0.25
+            ),
+
+            transparent 32%,
+
+            rgba(
+                0,
+                0,
+                0,
+                0.12
+            ) 55%,
+
+            rgba(
+                0,
+                0,
+                0,
+                0.68
+            ) 100%
+        );
+
+    z-index: 2;
+
+    pointer-events: none;
+
+}
+
+
+/* =====================================================
+   HERO CONTENT
+===================================================== */
+
+.hero-content {
+
+    position: absolute;
+
+    left: 5.8%;
+
+    top: 50%;
+
+    width: 510px;
+
+    transform:
+        translateY(-50%);
+
+    z-index: 5;
+
+}
+
+
+/* =====================================================
+   EYEBROW
+===================================================== */
+
+.hero-eyebrow {
+
+    margin-bottom: 27px;
+
+    color:
+        var(--gold);
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+    letter-spacing: 5px;
+
+    opacity: 0;
+
+    animation:
+        heroFadeUp
+        0.9s
+        cubic-bezier(
+            0.2,
+            0.7,
+            0.2,
+            1
+        )
+        0.15s
+        forwards;
+
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.hero h1 {
+
+    margin: 0;
+
+    color:
+        var(--white);
+
+    font-size:
+        clamp(
+            62px,
+            5.2vw,
+            92px
+        );
+
+    font-weight: 500;
+
+    line-height:
+        0.96;
+
+    letter-spacing:
+        -4px;
+
+    opacity: 0;
+
+    animation:
+        heroFadeUp
+        1s
+        cubic-bezier(
+            0.2,
+            0.7,
+            0.2,
+            1
+        )
+        0.28s
+        forwards;
+
+}
+
+
+.hero h1 span {
+
+    color:
+        var(--gold-light);
+
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.hero-description {
+
+    max-width: 500px;
+
+    margin-top: 34px;
+
+    color:
+        rgba(
+            220,
+            220,
+            220,
+            0.72
+        );
+
+    font-size: 14px;
+
+    line-height: 1.95;
+
+    opacity: 0;
+
+    animation:
+        heroFadeUp
+        0.9s
+        cubic-bezier(
+            0.2,
+            0.7,
+            0.2,
+            1
+        )
+        0.48s
+        forwards;
+
+}
+
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.hero-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-top: 30px;
+
+    opacity: 0;
+
+    animation:
+        heroFadeUp
+        0.9s
+        cubic-bezier(
+            0.2,
+            0.7,
+            0.2,
+            1
+        )
+        0.64s
+        forwards;
+
+}
+
+
+/* =====================================================
+   PRIMARY
+===================================================== */
+
+.hero-primary {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content:
+        space-between;
+
+    gap: 25px;
+
+    min-width: 215px;
+
+    padding:
+        16px 21px;
+
+    border-radius:
+        9px;
+
+    background:
+        var(--gold-light);
+
+    color:
+        var(--black);
+
+    font-size:
+        10px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        1.4px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.hero-primary strong {
+
+    font-size:
+        18px;
+
+    font-weight:
+        400;
+
+}
+
+
+.hero-primary:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 15px 40px
+        rgba(
+            216,
+            166,
+            76,
+            0.20
+        );
+
+}
+
+
+/* =====================================================
+   SECONDARY
+===================================================== */
+
+.hero-secondary {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content:
+        space-between;
+
+    gap: 22px;
+
+    min-width: 175px;
+
+    padding:
+        16px 20px;
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.20
+        );
+
+    border-radius:
+        9px;
+
+    color:
+        #e0e0e0;
+
+    font-size:
+        10px;
+
+    font-weight:
+        600;
+
+    letter-spacing:
+        1.4px;
+
+    transition:
+        all 0.3s ease;
+
+}
+
+
+.hero-secondary strong {
+
+    font-size:
+        14px;
+
+    font-weight:
+        400;
+
+}
+
+
+.hero-secondary:hover {
+
+    border-color:
+        var(--gold);
+
+    color:
+        var(--gold);
+
+    background:
+        rgba(
+            216,
+            166,
+            76,
+            0.04
+        );
+
+}
+
+
+/* =====================================================
+   SCROLL
+===================================================== */
+
+.hero-scroll {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+    margin-top: 53px;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.50
+        );
+
+    font-size:
+        8px;
+
+    letter-spacing:
+        4px;
+
+    opacity: 0;
+
+    animation:
+        heroFadeUp
+        0.9s
+        ease
+        0.82s
+        forwards;
+
+}
+
+
+.scroll-line {
+
+    display: block;
+
+    width: 1px;
+
+    height: 32px;
+
+    background:
+        var(--gold);
+
+    transform-origin:
+        top;
+
+    animation:
+        scrollPulse
+        2.2s
+        ease-in-out
+        1.4s
+        infinite;
+
+}
+
+
+/* =====================================================
+   PRODUCT
+===================================================== */
+
+.hero-product-wrapper {
+
+    position: absolute;
+
+    top: 50%;
+
+    right: 7%;
+
+    z-index: 5;
+
+    opacity: 0;
+
+    animation:
+        productEntrance
+        1.3s
+        cubic-bezier(
+            0.2,
+            0.7,
+            0.2,
+            1
+        )
+        0.35s
+        forwards,
+
+        productFloat
+        6s
+        ease-in-out
+        1.7s
+        infinite;
+
+}
+
+
+/* =====================================================
+   PRODUCT CARD
+===================================================== */
+
+.hero-product-card {
+
+    width: 390px;
+
+    min-height: 525px;
+
+    padding: 28px;
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.16
+        );
+
+    border-radius:
+        27px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #1b1e24,
+            #0e1014
+        );
+
+    box-shadow:
+
+        0 45px 100px
+        rgba(
+            0,
+            0,
+            0,
+            0.78
+        ),
+
+        inset 0 1px 0
+        rgba(
+            255,
+            255,
+            255,
+            0.07
+        );
+
+}
+
+
+/* =====================================================
+   PRODUCT HEADER
+===================================================== */
+
+.product-header {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        flex-start;
+
+    margin-bottom:
+        27px;
+
+    color:
+        #777b82;
+
+    font-size:
+        8px;
+
+    letter-spacing:
+        3px;
+
+}
+
+
+.product-time {
+
+    text-align:
+        right;
+
+}
+
+
+.product-time .product-clock {
+
+    display:
+        block;
+
+    color:
+        #eeeeee;
+
+    font-size:
+        18px;
+
+    font-weight:
+        400;
+
+}
+
+
+.product-time small {
+
+    display:
+        block;
+
+    margin-top:
+        5px;
+
+    color:
+        #777b82;
+
+    font-size:
+        9px;
+
+}
+
+
+/* =====================================================
+   PRODUCT BODY
+===================================================== */
+
+.product-body {
+
+    position:
+        relative;
+
+    height:
+        170px;
+
+    margin-bottom:
+        12px;
+
+    padding:
+        25px;
+
+    overflow:
+        hidden;
+
+    border-radius:
+        14px;
+
+    background:
+        #08090c;
+
+}
+
+
+.product-message {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    color:
+        #e9e9e9;
+
+    font-size:
+        17px;
+
+    line-height:
+        1.45;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+
+}
+
+.product-message-copy {
+    display: block;
+}
+
+.product-mark {
+    display: block;
+    flex: 0 0 62px;
+    width: 62px;
+    height: auto;
+    overflow: visible;
+    filter: drop-shadow(0 0 5px rgba(255, 194, 65, 0.4));
+}
+
+
+/* =====================================================
+   ORBIT
+===================================================== */
+
+.product-orbit {
+
+    position:
+        absolute;
+
+    left:
+        27px;
+
+    bottom:
+        -28px;
+
+    width:
+        185px;
+
+    height:
+        75px;
+
+    border:
+        1px solid
+        rgba(
+            216,
+            166,
+            76,
+            0.62
+        );
+
+    border-radius:
+        50%;
+
+    box-shadow:
+        0 0 45px
+        rgba(
+            216,
+            166,
+            76,
+            0.08
+        );
+
+    transform:
+        rotate(-4deg);
+
+}
+
+
+/* =====================================================
+   PRODUCT CONTROLS
+===================================================== */
+
+.product-controls {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        7px;
+
+}
+
+
+.product-control {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    padding:
+        11px 13px;
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.045
+        );
+
+    border-radius:
+        8px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.035
+        );
+
+}
+
+.lighting-control {
+    width: 100%;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.climate-control,
+.security-control {
+    width: 100%;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    appearance: none;
+    transition: background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.climate-control:hover,
+.climate-control:focus-visible,
+.security-control:hover,
+.security-control:focus-visible {
+    border-color: rgba(239, 189, 98, 0.38);
+    outline: none;
+}
+
+.climate-control[aria-pressed="true"] {
+    background: rgba(112, 190, 235, 0.15);
+    border-color: rgba(112, 190, 235, 0.48);
+    box-shadow: 0 0 24px rgba(112, 190, 235, 0.16);
+}
+
+.security-control[aria-pressed="true"] {
+    background: rgba(239, 189, 98, 0.13);
+    border-color: rgba(239, 189, 98, 0.4);
+    box-shadow: 0 0 24px rgba(239, 189, 98, 0.13);
+}
+
+.lighting-control:hover,
+.lighting-control:focus-visible {
+    border-color: rgba(239, 189, 98, 0.38);
+    outline: none;
+}
+
+.lighting-control[aria-pressed="true"] {
+    background: rgba(239, 189, 98, 0.13);
+    border-color: rgba(239, 189, 98, 0.4);
+    box-shadow: 0 0 24px rgba(239, 189, 98, 0.13);
+}
+
+
+.product-control span {
+
+    display:
+        block;
+
+    color:
+        #d5d5d7;
+
+    font-size:
+        10px;
+
+}
+
+
+.product-control small {
+
+    display:
+        block;
+
+    margin-top:
+        4px;
+
+    color:
+        #686b71;
+
+    font-size:
+        7px;
+
+}
+
+
+.product-control b {
+
+    color:
+        #777b82;
+
+    font-size:
+        17px;
+
+    font-weight:
+        300;
+
+}
+
+.climate-snowfall {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.climate-snowflake {
+    position: absolute;
+    top: -8vh;
+    left: var(--snow-x);
+    color: rgba(232, 246, 255, 0.88);
+    font-size: var(--snow-size);
+    line-height: 1;
+    text-shadow: 0 0 10px rgba(190, 225, 255, 0.75);
+    animation: snowFall var(--snow-duration) linear var(--snow-delay) infinite;
+}
+
+@keyframes snowFall {
+    0% { transform: translate3d(0, -8vh, 0) rotate(0deg); }
+    100% { transform: translate3d(var(--snow-drift), 115vh, 0) rotate(360deg); }
+}
+
+.security-alert {
+    position: fixed;
+    inset: 0;
+    z-index: 2100;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background: rgba(2, 4, 7, 0.48);
+    pointer-events: none;
+    animation: securityAlertIn 220ms steps(2, end) both;
+}
+
+.security-alert-panel {
+    position: relative;
+    min-width: min(360px, 90vw);
+    padding: 24px 32px;
+    border: 1px solid currentColor;
+    background: rgba(5, 7, 10, 0.94);
+    color: #ff4659;
+    text-align: center;
+    font: 700 20px/1.3 monospace;
+    letter-spacing: 0.16em;
+    text-shadow: 0 0 14px currentColor;
+    box-shadow: 0 0 38px rgba(255, 70, 89, 0.28), inset 0 0 28px rgba(255, 255, 255, 0.035);
+}
+
+.security-alert-panel::before,
+.security-alert-panel::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(transparent 0 3px, rgba(255, 255, 255, 0.05) 4px);
+    opacity: 0.4;
+    animation: securityScan 600ms linear infinite;
+}
+
+.security-alert.granted .security-alert-panel {
+    color: #79f2bd;
+    box-shadow: 0 0 38px rgba(121, 242, 189, 0.28), inset 0 0 28px rgba(255, 255, 255, 0.035);
+}
+
+@keyframes securityAlertIn {
+    0% { opacity: 0; transform: translateX(-5px); }
+    45% { opacity: 1; transform: translateX(4px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes securityScan {
+    from { background-position-y: 0; }
+    to { background-position-y: 8px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .climate-snowflake,
+    .security-alert,
+    .security-alert-panel::before,
+    .security-alert-panel::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+
+
+/* =====================================================
+   PRODUCT FOOTER
+===================================================== */
+
+.product-footer {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    margin-top:
+        24px;
+
+    color:
+        #676a70;
+
+    font-size:
+        7px;
+
+    letter-spacing:
+        2px;
+
+}
+
+
+/* =====================================================
+   BOTTOM LABEL
+===================================================== */
+
+.hero-bottom-label {
+
+    position:
+        absolute;
+
+    right:
+        7%;
+
+    bottom:
+        47px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        17px;
+
+    z-index:
+        6;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.48
+        );
+
+    font-size:
+        8px;
+
+    letter-spacing:
+        4px;
+
+    opacity:
+        0;
+
+    animation:
+        heroFadeIn
+        1s
+        ease
+        1.05s
+        forwards;
+
+}
+
+
+.hero-bottom-label i {
+
+    width:
+        4px;
+
+    height:
+        4px;
+
+    border-radius:
+        50%;
+
+    background:
+        var(--gold);
+
+}
+
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+@keyframes heroImageReveal {
+
+    from {
+
+        opacity: 0.65;
+
+        transform:
+            scale(1.10);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            scale(1.04);
+
+    }
+
+}
+
+
+@keyframes heroFadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+@keyframes heroFadeIn {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+    }
+
+}
+
+
+@keyframes productEntrance {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateX(70px)
+            translateY(-49%)
+            rotate(8deg);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateX(0)
+            translateY(-49%)
+            rotate(5deg);
+
+    }
+
+}
+
+
+@keyframes productFloat {
+
+    0% {
+
+        transform:
+            translateY(-49%)
+            rotate(5deg);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(
+                calc(-49% - 9px)
+            )
+            rotate(5.4deg);
+
+    }
+
+    100% {
+
+        transform:
+            translateY(-49%)
+            rotate(5deg);
+
+    }
+
+}
+
+
+@keyframes scrollPulse {
+
+    0% {
+
+        opacity:
+            0.35;
+
+        transform:
+            scaleY(0.55);
+
+    }
+
+    50% {
+
+        opacity:
+            1;
+
+        transform:
+            scaleY(1);
+
+    }
+
+    100% {
+
+        opacity:
+            0.35;
+
+        transform:
+            scaleY(0.55);
+
+    }
+
+}
+
+
+/* =====================================================
+   REDUCED MOTION
+===================================================== */
+
+@media (
+    prefers-reduced-motion: reduce
+) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation:
+            none !important;
+
+        transition:
+            none !important;
+
+    }
+
+}

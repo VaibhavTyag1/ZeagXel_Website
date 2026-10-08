@@ -1,0 +1,1595 @@
+/* =========================================================
+   ZEAGXEL — ABOUT
+   ========================================================= */
+
+.about-hero {
+
+    position: relative;
+
+    min-height: calc(100vh - 132px);
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 110px 7vw;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 75% 50%,
+            rgba(210,157,48,.08),
+            transparent 35%
+        ),
+        #050607;
+}
+
+
+.about-hero-content {
+
+    position: relative;
+
+    z-index: 3;
+
+    width: 60%;
+
+}
+
+
+.about-hero h1 {
+
+    margin: 25px 0 35px;
+
+    font-size: clamp(60px,7vw,105px);
+
+    line-height: .88;
+
+    font-weight: 400;
+
+    letter-spacing: -5px;
+
+}
+
+
+.about-hero h1 span {
+
+    color: #686868;
+
+}
+
+
+.about-hero-content > p {
+
+    max-width: 650px;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    color: #818181;
+
+}
+
+
+.about-hero-line {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 45px;
+
+    font-size: 7px;
+
+    letter-spacing: 4px;
+
+    color: #777;
+}
+
+
+.about-hero-line span {
+
+    width: 45px;
+
+    height: 1px;
+
+    background: #c89637;
+}
+
+
+/* =========================================================
+   HERO MARK
+   ========================================================= */
+
+.about-hero-mark {
+
+    position: absolute;
+
+    right: 8vw;
+
+    top: 50%;
+
+    width: 470px;
+
+    height: 470px;
+
+    transform: translateY(-50%);
+}
+
+
+.about-orbit {
+
+    position: absolute;
+
+    inset: 50%;
+
+    border: 1px solid rgba(205,153,50,.13);
+
+    border-radius: 50%;
+
+    transform: translate(-50%,-50%);
+
+}
+
+
+.orbit-one {
+
+    width: 180px;
+
+    height: 180px;
+}
+
+
+.orbit-two {
+
+    width: 300px;
+
+    height: 300px;
+}
+
+
+.orbit-three {
+
+    width: 430px;
+
+    height: 430px;
+}
+
+
+.about-core {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    width: 130px;
+
+    height: 130px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transform: translate(-50%,-50%);
+
+    border: 1px solid #c89436;
+
+    border-radius: 50%;
+
+    background: #080a0c;
+
+    box-shadow:
+        0 0 0 20px rgba(200,148,54,.025),
+        0 0 80px rgba(200,148,54,.08);
+
+    font-size: 43px;
+
+    letter-spacing: -6px;
+
+}
+
+
+.about-core span {
+
+    color: #eee;
+}
+
+
+.about-core b {
+
+    color: #d6a03e;
+
+    font-weight: 400;
+}
+
+
+.about-core-label {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: calc(50% + 105px);
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 6px;
+
+    font-size: 7px;
+
+    letter-spacing: 4px;
+
+    color: #aaa;
+
+}
+
+
+.about-core-label small {
+
+    font-size: 5px;
+
+    color: #555;
+}
+
+
+.about-scroll {
+
+    position: absolute;
+
+    bottom: 35px;
+
+    left: 7vw;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    font-size: 7px;
+
+    letter-spacing: 4px;
+
+    color: #666;
+}
+
+
+.about-scroll span {
+
+    width: 1px;
+
+    height: 28px;
+
+    background: #c9973b;
+}
+
+
+/* =========================================================
+   ORIGIN
+   ========================================================= */
+
+.about-origin {
+
+    display: grid;
+
+    grid-template-columns: .7fr 1.7fr;
+
+    gap: 80px;
+
+    padding: 180px 15vw;
+
+    background: #08090a;
+}
+
+
+.origin-label {
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+    color: #777;
+}
+
+
+.origin-label span {
+
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: #c99638;
+}
+
+
+.origin-content {
+
+    max-width: 850px;
+}
+
+
+.origin-content h2 {
+
+    margin: 25px 0 40px;
+
+    font-size: clamp(48px,5vw,76px);
+
+    line-height: .95;
+
+    font-weight: 400;
+
+    letter-spacing: -3px;
+}
+
+
+.origin-content h2 span {
+
+    display: block;
+
+    color: #666;
+}
+
+
+.origin-content p {
+
+    max-width: 700px;
+
+    margin-bottom: 20px;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    color: #777;
+}
+
+
+.origin-highlight {
+
+    margin-top: 50px !important;
+
+    padding-left: 25px;
+
+    border-left: 1px solid #c89637;
+
+    font-size: 17px !important;
+
+    line-height: 1.8 !important;
+
+    color: #aaa !important;
+}
+
+
+.origin-highlight span {
+
+    color: #d5a044;
+}
+
+
+/* =========================================================
+   PHILOSOPHY
+   ========================================================= */
+
+.philosophy-section {
+
+    padding: 170px 7vw;
+}
+
+
+.philosophy-heading {
+
+    max-width: 850px;
+
+    margin-bottom: 90px;
+}
+
+
+.philosophy-heading h2 {
+
+    margin: 20px 0;
+
+    font-size: clamp(48px,5vw,76px);
+
+    line-height: .95;
+
+    font-weight: 400;
+
+    letter-spacing: -3px;
+}
+
+
+.philosophy-heading h2 span {
+
+    display: block;
+
+    color: #666;
+}
+
+
+.philosophy-heading p {
+
+    max-width: 700px;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    color: #777;
+}
+
+
+.philosophy-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    border-top: 1px solid #222;
+
+    border-bottom: 1px solid #222;
+}
+
+
+.philosophy-card {
+
+    min-height: 330px;
+
+    padding: 35px;
+
+    border-right: 1px solid #222;
+
+    transition: .35s ease;
+}
+
+
+.philosophy-card:last-child {
+
+    border-right: 0;
+}
+
+
+.philosophy-card:hover {
+
+    background: #0b0d0f;
+
+    transform: translateY(-4px);
+}
+
+
+.philosophy-number {
+
+    font-size: 7px;
+
+    letter-spacing: 3px;
+
+    color: #c99638;
+}
+
+
+.philosophy-symbol {
+
+    margin: 50px 0 25px;
+
+    font-size: 30px;
+
+    color: #d0a047;
+}
+
+
+.philosophy-card h3 {
+
+    margin-bottom: 15px;
+
+    font-size: 20px;
+
+    font-weight: 400;
+}
+
+
+.philosophy-card p {
+
+    font-size: 11px;
+
+    line-height: 1.8;
+
+    color: #707070;
+}
+
+
+/* =========================================================
+   IDENTITY
+   ========================================================= */
+
+.identity-section {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 800px;
+
+    background: #08090a;
+}
+
+
+.identity-visual {
+
+    position: relative;
+
+    min-height: 700px;
+
+    overflow: hidden;
+
+    border-right: 1px solid #202326;
+}
+
+
+.identity-grid {
+
+    position: absolute;
+
+    inset: 0;
+
+    opacity: .3;
+
+    background-image:
+        linear-gradient(#1b1e21 1px,transparent 1px),
+        linear-gradient(90deg,#1b1e21 1px,transparent 1px);
+
+    background-size: 55px 55px;
+}
+
+
+.identity-circle {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    border: 1px solid rgba(201,150,56,.15);
+
+    border-radius: 50%;
+
+    transform: translate(-50%,-50%);
+}
+
+
+.circle-one {
+
+    width: 330px;
+
+    height: 330px;
+}
+
+
+.circle-two {
+
+    width: 530px;
+
+    height: 530px;
+}
+
+
+.identity-center {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform: translate(-50%,-50%);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.identity-zx {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 120px;
+
+    height: 120px;
+
+    border: 1px solid #c99638;
+
+    border-radius: 50%;
+
+    background: #07090a;
+
+    font-size: 40px;
+
+    letter-spacing: -5px;
+}
+
+
+.identity-zx span {
+
+    color: #d6a03e;
+}
+
+
+.identity-center small {
+
+    font-size: 6px;
+
+    letter-spacing: 3px;
+
+    color: #666;
+}
+
+
+.identity-node {
+
+    position: absolute;
+
+    padding: 9px 13px;
+
+    border: 1px solid #292c30;
+
+    background: #090b0d;
+
+    font-size: 6px;
+
+    letter-spacing: 2px;
+
+    color: #777;
+}
+
+
+.node-one {
+
+    top: 20%;
+
+    left: 25%;
+}
+
+
+.node-two {
+
+    top: 28%;
+
+    right: 17%;
+}
+
+
+.node-three {
+
+    bottom: 22%;
+
+    left: 17%;
+}
+
+
+.node-four {
+
+    bottom: 18%;
+
+    right: 23%;
+}
+
+
+.identity-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 100px 10vw;
+}
+
+
+.identity-content h2 {
+
+    margin: 25px 0;
+
+    font-size: clamp(48px,5vw,75px);
+
+    line-height: .95;
+
+    font-weight: 400;
+
+    letter-spacing: -3px;
+}
+
+
+.identity-content h2 span {
+
+    display: block;
+
+    color: #666;
+}
+
+
+.identity-content > p {
+
+    max-width: 600px;
+
+    margin-bottom: 20px;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    color: #777;
+}
+
+
+.identity-points {
+
+    max-width: 600px;
+
+    margin-top: 30px;
+
+    border-top: 1px solid #222;
+}
+
+
+.identity-points div {
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #222;
+
+    font-size: 10px;
+
+    color: #aaa;
+}
+
+
+.identity-points span {
+
+    display: inline-block;
+
+    width: 35px;
+
+    color: #c99638;
+}
+
+
+/* =========================================================
+   DIFFERENCE
+   ========================================================= */
+
+.difference-section {
+
+    padding: 180px 7vw;
+}
+
+
+.difference-heading {
+
+    text-align: center;
+
+    margin-bottom: 90px;
+}
+
+
+.difference-heading h2 {
+
+    margin-top: 25px;
+
+    font-size: clamp(55px,6vw,90px);
+
+    line-height: .85;
+
+    font-weight: 400;
+
+    letter-spacing: -5px;
+}
+
+
+.difference-heading h2 span {
+
+    color: #666;
+}
+
+
+.difference-comparison {
+
+    display: grid;
+
+    grid-template-columns: 1fr 120px 1fr;
+
+    align-items: center;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    border: 1px solid #24272a;
+}
+
+
+.difference-side {
+
+    padding: 40px;
+}
+
+
+.difference-side.old {
+
+    background: #08090a;
+}
+
+
+.difference-side.new {
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(201,150,55,.06),
+            transparent 65%
+        );
+}
+
+
+.difference-title {
+
+    margin-bottom: 25px;
+
+    font-size: 7px;
+
+    letter-spacing: 3px;
+
+    color: #666;
+}
+
+
+.difference-line {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 17px 0;
+
+    border-bottom: 1px solid #222;
+
+    font-size: 10px;
+
+    color: #777;
+}
+
+
+.difference-line span {
+
+    color: #bbb;
+}
+
+
+.difference-side.new .difference-line span {
+
+    color: #d0a047;
+}
+
+
+.difference-center {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.difference-arrow {
+
+    display: grid;
+
+    place-items: center;
+
+    width: 55px;
+
+    height: 55px;
+
+    border: 1px solid #c99638;
+
+    border-radius: 50%;
+
+    color: #d0a047;
+
+    font-size: 20px;
+}
+
+
+.difference-center span {
+
+    font-size: 6px;
+
+    letter-spacing: 2px;
+
+    color: #777;
+}
+
+
+/* =========================================================
+   MISSION
+   ========================================================= */
+
+.mission-section {
+
+    position: relative;
+
+    min-height: 700px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 140px 15vw;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 70% 50%,
+            rgba(201,150,55,.07),
+            transparent 38%
+        ),
+        #08090a;
+}
+
+
+.mission-number {
+
+    position: absolute;
+
+    right: 7vw;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 260px;
+
+    color: rgba(216,163,63,.025);
+}
+
+
+.mission-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 900px;
+}
+
+
+.mission-content h2 {
+
+    margin: 25px 0 35px;
+
+    font-size: clamp(60px,7vw,105px);
+
+    line-height: .88;
+
+    font-weight: 400;
+
+    letter-spacing: -5px;
+}
+
+
+.mission-content h2 span {
+
+    display: block;
+
+    color: #666;
+}
+
+
+.mission-content p {
+
+    max-width: 700px;
+
+    margin-bottom: 20px;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    color: #777;
+}
+
+
+.mission-statement {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 45px;
+
+    font-size: 7px;
+
+    letter-spacing: 4px;
+
+    color: #c99638;
+}
+
+
+.mission-statement span {
+
+    width: 45px;
+
+    height: 1px;
+
+    background: #c99638;
+}
+
+
+/* =========================================================
+   FUTURE
+   ========================================================= */
+
+.future-section {
+
+    padding: 170px 7vw;
+}
+
+
+.future-heading {
+
+    max-width: 850px;
+
+    margin-bottom: 90px;
+}
+
+
+.future-heading h2 {
+
+    margin: 20px 0;
+
+    font-size: clamp(48px,5vw,76px);
+
+    line-height: .95;
+
+    font-weight: 400;
+
+    letter-spacing: -3px;
+}
+
+
+.future-heading h2 span {
+
+    display: block;
+
+    color: #666;
+}
+
+
+.future-heading p {
+
+    max-width: 700px;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    color: #777;
+}
+
+
+.future-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    border-top: 1px solid #222;
+
+    border-left: 1px solid #222;
+}
+
+
+.future-card {
+
+    min-height: 300px;
+
+    padding: 35px;
+
+    border-right: 1px solid #222;
+
+    border-bottom: 1px solid #222;
+
+    transition: .35s ease;
+}
+
+
+.future-card:hover {
+
+    background: #0b0d0f;
+
+    transform: translateY(-4px);
+}
+
+
+.future-card > span {
+
+    font-size: 7px;
+
+    letter-spacing: 3px;
+
+    color: #c99638;
+}
+
+
+.future-card h3 {
+
+    margin: 55px 0 15px;
+
+    font-size: 19px;
+
+    font-weight: 400;
+}
+
+
+.future-card p {
+
+    font-size: 11px;
+
+    line-height: 1.8;
+
+    color: #707070;
+}
+
+
+/* =========================================================
+   FOUNDER BELIEF
+   ========================================================= */
+
+.founder-section {
+
+    display: grid;
+
+    grid-template-columns: .7fr 1.7fr;
+
+    gap: 80px;
+
+    padding: 180px 15vw;
+
+    background: #08090a;
+}
+
+
+.founder-mark {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+}
+
+
+.founder-zx {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 100px;
+
+    height: 100px;
+
+    border: 1px solid #c99638;
+
+    border-radius: 50%;
+
+    font-size: 34px;
+
+    letter-spacing: -5px;
+}
+
+
+.founder-zx span {
+
+    color: #d6a03e;
+}
+
+
+.founder-mark > span {
+
+    font-size: 7px;
+
+    letter-spacing: 4px;
+
+    color: #666;
+}
+
+
+.founder-content {
+
+    max-width: 850px;
+}
+
+
+.founder-content h2 {
+
+    margin: 25px 0 35px;
+
+    font-size: clamp(48px,5vw,76px);
+
+    line-height: .95;
+
+    font-weight: 400;
+
+    letter-spacing: -3px;
+}
+
+
+.founder-content h2 span {
+
+    display: block;
+
+    color: #666;
+}
+
+
+.founder-content p {
+
+    max-width: 700px;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    color: #777;
+}
+
+
+/* =========================================================
+   FINAL
+   ========================================================= */
+
+.about-final {
+
+    min-height: 80vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 120px 20px;
+
+    text-align: center;
+}
+
+
+.about-final h2 {
+
+    margin: 25px 0;
+
+    font-size: clamp(60px,7vw,105px);
+
+    line-height: .88;
+
+    font-weight: 400;
+
+    letter-spacing: -5px;
+}
+
+
+.about-final h2 span {
+
+    display: block;
+
+    color: #666;
+}
+
+
+.about-final p {
+
+    margin-bottom: 35px;
+
+    font-size: 14px;
+
+    color: #777;
+}
+
+
+.about-final-actions {
+
+    display: flex;
+
+    gap: 14px;
+}
+
+
+/* =========================================================
+   REVEAL
+   ========================================================= */
+
+.about-reveal {
+
+    opacity: 0;
+
+    transform: translateY(35px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+
+.about-reveal.revealed {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width:1100px) {
+
+    .about-hero-mark {
+
+        width: 350px;
+
+        height: 350px;
+
+        right: 2vw;
+    }
+
+
+    .orbit-three {
+
+        width: 330px;
+
+        height: 330px;
+    }
+
+
+    .about-hero-content {
+
+        width: 65%;
+    }
+
+
+    .identity-content {
+
+        padding: 80px 6vw;
+    }
+
+}
+
+
+@media (max-width:900px) {
+
+    .about-hero {
+
+        min-height: auto;
+
+        padding-top: 100px;
+
+        padding-bottom: 100px;
+    }
+
+
+    .about-hero-content {
+
+        width: 100%;
+    }
+
+
+    .about-hero-mark {
+
+        position: relative;
+
+        right: auto;
+
+        top: auto;
+
+        width: 330px;
+
+        height: 330px;
+
+        margin: 100px auto 0;
+
+        transform: none;
+    }
+
+
+    .about-scroll {
+
+        display: none;
+    }
+
+
+    .about-origin,
+    .founder-section {
+
+        grid-template-columns: 1fr;
+
+        padding: 120px 8vw;
+
+    }
+
+
+    .philosophy-grid,
+    .future-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .identity-section {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .identity-visual {
+
+        min-height: 600px;
+
+    }
+
+
+    .difference-comparison {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .difference-center {
+
+        padding: 25px;
+
+        border-top: 1px solid #222;
+
+        border-bottom: 1px solid #222;
+
+    }
+
+
+    .difference-arrow {
+
+        transform: rotate(90deg);
+
+    }
+
+
+    .mission-section {
+
+        padding: 120px 8vw;
+
+    }
+
+}
+
+
+@media (max-width:600px) {
+
+    .about-hero h1 {
+
+        font-size: 58px;
+
+        letter-spacing: -3px;
+
+    }
+
+
+    .philosophy-grid,
+    .future-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .philosophy-card {
+
+        border-right: 0;
+
+    }
+
+
+    .identity-visual {
+
+        min-height: 500px;
+
+    }
+
+
+    .circle-two {
+
+        width: 390px;
+
+        height: 390px;
+    }
+
+
+    .identity-node {
+
+        font-size: 5px;
+    }
+
+
+    .mission-content h2 {
+
+        font-size: 58px;
+
+        letter-spacing: -3px;
+    }
+
+
+    .mission-number {
+
+        font-size: 150px;
+    }
+
+
+    .about-final h2 {
+
+        font-size: 58px;
+
+        letter-spacing: -3px;
+    }
+
+
+    .about-final-actions {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .founder-section {
+
+        padding: 120px 8vw;
+    }
+
+}

@@ -1,0 +1,386 @@
+/* =====================================================
+   ZEAGXEL
+   RESPONSIVE
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .nav-links {
+
+        gap: 22px;
+
+    }
+
+
+    .nav-partner {
+
+        min-width: 145px;
+
+    }
+
+
+    .hero-content {
+
+        left: 5%;
+
+        width: 460px;
+
+    }
+
+
+    .hero-product-wrapper {
+
+        right: 1%;
+
+    }
+
+
+    .hero-product-card {
+
+        width: 340px;
+
+        min-height: 470px;
+
+    }
+
+}
+
+
+/* =====================================================
+   SMALL LAPTOP
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+
+        gap: 14px;
+
+    }
+
+
+    .brand {
+
+        font-size: 17px;
+
+        letter-spacing: 2px;
+
+    }
+
+
+    .nav-partner {
+
+        min-width: 130px;
+
+        height: 50px;
+
+        font-size: 9px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 68px;
+
+    }
+
+
+    .hero-content {
+
+        width: 430px;
+
+    }
+
+
+    .hero-product-card {
+
+        width: 300px;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .navbar {
+
+        height: 75px;
+
+        padding:
+            0 22px;
+
+    }
+
+
+    .brand {
+
+        font-size:
+            17px;
+
+        letter-spacing:
+            2px;
+
+    }
+
+
+    .nav-links {
+
+        display:
+            none;
+
+    }
+
+
+    .nav-partner {
+
+        min-width:
+            120px;
+
+        height:
+            46px;
+
+        padding:
+            0 12px;
+
+        font-size:
+            8px;
+
+    }
+
+
+    .hero {
+
+        height:
+            auto;
+
+        min-height:
+            900px;
+
+        margin-top:
+            75px;
+
+        padding:
+            100px 25px 60px;
+
+    }
+
+
+    .hero::before {
+
+        background-position:
+            center;
+
+    }
+
+
+    .hero-overlay {
+
+        background:
+            linear-gradient(
+                180deg,
+
+                rgba(
+                    5,
+                    6,
+                    8,
+                    0.25
+                ),
+
+                rgba(
+                    5,
+                    6,
+                    8,
+                    0.82
+                ) 58%,
+
+                #050608 100%
+            );
+
+    }
+
+
+    .hero-content {
+
+        position:
+            relative;
+
+        left:
+            auto;
+
+        top:
+            auto;
+
+        width:
+            100%;
+
+        transform:
+            none;
+
+    }
+
+
+    .hero-eyebrow {
+
+        font-size:
+            8px;
+
+        letter-spacing:
+            3px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size:
+            55px;
+
+        letter-spacing:
+            -3px;
+
+    }
+
+
+    .hero-description {
+
+        max-width:
+            95%;
+
+        font-size:
+            13px;
+
+    }
+
+
+    .hero-actions {
+
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+
+    }
+
+
+    .hero-product-wrapper {
+
+        top:
+            auto;
+
+        right:
+            -70px;
+
+        bottom:
+            -50px;
+
+        transform:
+            scale(0.68)
+            rotate(5deg);
+
+        animation:
+            mobileProduct
+            1.2s
+            cubic-bezier(
+                0.2,
+                0.7,
+                0.2,
+                1
+            )
+            0.5s
+            forwards;
+
+    }
+
+
+    .hero-bottom-label {
+
+        display:
+            none;
+
+    }
+
+}
+
+
+@keyframes mobileProduct {
+
+    from {
+
+        opacity:
+            0;
+
+        transform:
+            scale(0.68)
+            translateX(80px)
+            rotate(8deg);
+
+    }
+
+    to {
+
+        opacity:
+            1;
+
+        transform:
+            scale(0.68)
+            translateX(0)
+            rotate(5deg);
+
+    }
+
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+===================================================== */
+
+@media (max-width: 420px) {
+
+    .nav-partner {
+
+        min-width:
+            105px;
+
+        font-size:
+            7px;
+
+    }
+
+
+    .hero {
+
+        min-height:
+            850px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size:
+            48px;
+
+    }
+
+
+    .hero-description {
+
+        font-size:
+            12px;
+
+    }
+
+}
