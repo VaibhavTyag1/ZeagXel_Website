@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Experience | ZeagXel</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/experience.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="../index.html" class="brand">
+            ZEAG<span>X</span>EL
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="../index.html">
+                HOME
+            </a>
+
+            <a href="experience.html" class="active">
+                EXPERIENCE
+                <span class="nav-dot"></span>
+            </a>
+
+            <a href="technology.html">
+                TECHNOLOGY
+            </a>
+
+            <a href="builders.html">
+                FOR BUILDERS
+            </a>
+
+            <a href="about.html">
+                ABOUT
+            </a>
+
+            <a href="contact.html">
+                CONTACT
+            </a>
+
+        </nav>
+
+        <a href="contact.html" class="nav-button">
+            PARTNER WITH US
+        </a>
+
+    </header>
+
+
+    <!-- ================= EXPERIENCE ================= -->
+
+    <main>
+
+        <!-- ================= EXPERIENCE HERO ================= -->
+
+        <section class="experience-hero">
+
+            <div class="experience-hero-content">
+
+                <div class="eyebrow">
+                    THE ZEAGXEL EXPERIENCE
+                </div>
+
+                <h1>
+                    A home that
+                    <span>understands</span>
+                    how you live.
+                </h1>
+
+                <p>
+                    ZeagXel turns the electrical infrastructure of your home
+                    into one intelligent environment — responsive to routines,
+                    conditions and the way you actually live.
+                </p>
+
+            </div>
+
+            <div class="hero-scroll">
+                <span></span>
+                SCROLL TO EXPERIENCE
+            </div>
+
+        </section>
+
+
+        <!-- ================= INTRO ================= -->
+
+        <section class="experience-intro">
+
+            <div class="section-label">
+                NOT JUST CONTROL
+            </div>
+
+            <h2>
+                Technology should
+                <span>fade into the background.</span>
+            </h2>
+
+            <p>
+                The goal isn't to give you more things to control.
+                It's to make the home feel more natural, responsive
+                and effortless.
+            </p>
+
+        </section>
+
+
+        <!-- ================= MODES ================= -->
+
+        <section class="modes-section">
+
+            <div class="modes-header">
+
+                <div>
+
+                    <div class="eyebrow">
+                        ONE HOME. MANY MOMENTS.
+                    </div>
+
+                    <h2>
+                        Your home,
+                        <span>your rhythm.</span>
+                    </h2>
+
+                </div>
+
+                <p>
+                    Create experiences instead of controlling individual
+                    devices. One command can change the environment
+                    around you.
+                </p>
+
+            </div>
+
+
+            <div class="experience-interface">
+
+                <!-- ================= MODE SELECTOR ================= -->
+
+                <div class="mode-selector">
+
+                    <button
+                        class="mode-card active"
+                        data-mode="home"
+                        type="button"
+                    >
+
+                        <span class="mode-number">
+                            01
+                        </span>
+
+                        <div class="mode-icon">
+                            ◇
+                        </div>
+
+                        <div class="mode-name">
+                            HOME
+                        </div>
+
+                        <div class="mode-description">
+                            Everything ready for you.
+                        </div>
+
+                    </button>
+
+
+                    <button
+                        class="mode-card"
+                        data-mode="movie"
+                        type="button"
+                    >
+
+                        <span class="mode-number">
+                            02
+                        </span>
+
+                        <div class="mode-icon">
+                            ◈
+                        </div>
+
+                        <div class="mode-name">
+                            MOVIE
+                        </div>
+
+                        <div class="mode-description">
+                            Set the atmosphere.
+                        </div>
+
+                    </button>
+
+
+                    <button
+                        class="mode-card"
+                        data-mode="away"
+                        type="button"
+                    >
+
+                        <span class="mode-number">
+                            03
+                        </span>
+
+                        <div class="mode-icon">
+                            +
+                        </div>
+
+                        <div class="mode-name">
+                            AWAY
+                        </div>
+
+                        <div class="mode-description">
+                            Leave without worrying.
+                        </div>
+
+                    </button>
+
+
+                    <button
+                        class="mode-card"
+                        data-mode="night"
+                        type="button"
+                    >
+
+                        <span class="mode-number">
+                            04
+                        </span>
+
+                        <div class="mode-icon">
+                            ◌
+                        </div>
+
+                        <div class="mode-name">
+                            NIGHT
+                        </div>
+
+                        <div class="mode-description">
+                            Quiet intelligence.
+                        </div>
+
+                    </button>
+
+                </div>
+
+
+                <!-- ================= CONTROL PANEL ================= -->
+
+                <div class="control-panel">
+
+                    <div class="panel-top">
+
+                        <div class="panel-brand">
+                            ZEAGXEL HOME
+                        </div>
+
+                        <div class="panel-status">
+
+                            <span></span>
+
+                            LOCAL
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="panel-main">
+
+                        <div class="panel-heading">
+
+                            <span id="mode-label">
+                                HOME
+                            </span>
+
+                            <h3 id="mode-title">
+                                Welcome home.
+                            </h3>
+
+                            <p id="mode-text">
+                                The home prepares itself around you.
+                                Lighting, climate and connected loads
+                                move into their preferred state.
+                            </p>
+
+                        </div>
+
+
+                        <div class="room-scene" data-lights="on" data-fan="on" data-climate="on" data-tv="off" role="img" aria-label="Interactive living room with controllable lights, ceiling fan, air conditioning, and television">
+                            <div class="room-light-glow" aria-hidden="true"></div>
+                            <div class="room-fan-motion" aria-hidden="true"></div>
+                            <div class="room-airflow" aria-hidden="true"></div>
+                            <div class="room-curtains" aria-hidden="true"></div>
+                            <div class="room-tv-screen" aria-hidden="true">
+                                <video class="room-tv-video" muted loop playsinline preload="none" aria-hidden="true">
+                                    <source src="../assets/videos/experience/movie-scene.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="room-security" aria-hidden="true">
+                                <svg viewBox="0 0 48 56" focusable="false">
+                                    <path d="M24 3 43 10v15c0 13-8 22-19 28C13 47 5 38 5 25V10L24 3Z" />
+                                    <path d="m16 27 5 5 11-12" />
+                                </svg>
+                                <span class="security-kicker">ZEAGXEL · LOCAL DEFENSE</span>
+                                <strong>SECURITY ON</strong>
+                                <span class="security-detail"><i></i> PERIMETER ACTIVE</span>
+                            </div>
+                            <div class="room-scene-label"><span id="ring-value">READY</span><span>LIVE ROOM</span></div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= DEVICE STATES ================= -->
+
+                    <div class="device-grid">
+
+                        <button class="device device-control" type="button" data-device="light" aria-pressed="true">
+
+                            <div class="device-top">
+
+                                <span class="device-icon">
+                                    ◉
+                                </span>
+
+                                <span
+                                    class="device-status"
+                                    id="light-status"
+                                >
+                                    ON
+                                </span>
+
+                            </div>
+
+                            <h4>
+                                Lighting
+                            </h4>
+
+                            <p id="light-value">
+                                Warm ambience
+                            </p>
+
+                        </button>
+
+
+                        <button class="device device-control" type="button" data-device="fan" aria-pressed="true">
+
+                            <div class="device-top">
+
+                                <span class="device-icon">
+                                    ≈
+                                </span>
+
+                                <span
+                                    class="device-status"
+                                    id="fan-status"
+                                >
+                                    ON
+                                </span>
+
+                            </div>
+
+                            <h4>
+                                Fan
+                            </h4>
+
+                            <p id="fan-value">
+                                40%
+                            </p>
+
+                        </button>
+
+
+                        <button class="device device-control" type="button" data-device="climate" aria-pressed="true">
+
+                            <div class="device-top">
+
+                                <span class="device-icon">
+                                    □
+                                </span>
+
+                                <span
+                                    class="device-status"
+                                    id="climate-status"
+                                >
+                                    READY
+                                </span>
+
+                            </div>
+
+                            <h4>
+                                Climate
+                            </h4>
+
+                            <p id="climate-value">
+                                24°C
+                            </p>
+
+                        </button>
+
+
+                        <button class="device device-control" type="button" data-device="tv" aria-pressed="false">
+
+                            <div class="device-top">
+
+                                <span class="device-icon">
+                                    ◈
+                                </span>
+
+                                <span
+                                    class="device-status"
+                                    id="tv-status"
+                                >
+                                    READY
+                                </span>
+
+                            </div>
+
+                                <h4>
+                                Television
+                            </h4>
+
+                            <p id="tv-value">
+                                Screen off
+                            </p>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="panel-footer">
+
+                        <span>
+                            NO CLOUD REQUIRED
+                        </span>
+
+                        <span>
+                            •
+                        </span>
+
+                        <span>
+                            PRIVATE
+                        </span>
+
+                        <span>
+                            •
+                        </span>
+
+                        <span>
+                            INTELLIGENT
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= DAY EXPERIENCE: MORNING ================= -->
+
+        <section class="morning-experience" aria-labelledby="morning-title">
+            <div class="morning-story">
+                <div class="eyebrow">01 · GOOD MORNING</div>
+                <h2 id="morning-title">Wake up.<br><span>Your home is ready.</span></h2>
+                <p>As you wake, ZEAGXEL eases the room into morning: the AC switches off, the curtains rise, the fan ramps up to full speed, and the geyser turns on to heat the water.</p>
+
+                <ol class="morning-actions">
+                    <li><span>01</span><div><strong>AC</strong><small>Switches off</small></div></li>
+                    <li><span>02</span><div><strong>Curtains</strong><small>Open to let in daylight</small></div></li>
+                    <li><span>03</span><div><strong>Fan</strong><small>Ramps up to full speed</small></div></li>
+                    <li><span>04</span><div><strong>Geyser</strong><small>Starts heating water</small></div></li>
+                </ol>
+            </div>
+
+            <div class="morning-film">
+                <video controls autoplay muted loop playsinline preload="metadata" aria-label="A person waking up as the bedroom curtains open">
+                    <source src="../assets/videos/experience/morning-wakeup-zeagxel.mp4" type="video/mp4">
+                </video>
+                <div class="film-caption"><span>THE MORNING ROUTINE</span><span>01 / DAY EXPERIENCE</span></div>
+            </div>
+        </section>
+
+
+        <!-- ================= DAY EXPERIENCE: HOME SECURITY ================= -->
+
+        <section class="morning-experience morning-experience-reverse" aria-labelledby="security-title">
+            <div class="morning-film">
+                <video controls autoplay muted loop playsinline preload="metadata" aria-label="A smart entry lock and the home's security sensors">
+                    <source src="../assets/videos/experience/security-moments.mp4" type="video/mp4">
+                </video>
+                <div class="film-caption"><span>SECURITY THROUGH THE DAY</span><span>02 / DAY EXPERIENCE</span></div>
+            </div>
+
+            <div class="morning-story">
+                <div class="eyebrow">02 · ALWAYS ON GUARD</div>
+                <h2 id="security-title">Your home stays close.<br><span>Even when you're away.</span></h2>
+                <p>Bring smart entry, security sensors and alerts into one connected experience. When you're out, use the app to check your home's status, receive alerts and manage supported connected features remotely.</p>
+
+                <ol class="morning-actions">
+                    <li><span>01</span><div><strong>Smart entry</strong><small>Manage connected door access</small></div></li>
+                    <li><span>02</span><div><strong>Remote control</strong><small>Check status from the app</small></div></li>
+                    <li><span>03</span><div><strong>Security alerts</strong><small>Know when sensors need attention</small></div></li>
+                </ol>
+            </div>
+        </section>
+
+
+        <!-- ================= DAY EXPERIENCE: PERSONAL MODES ================= -->
+
+        <section class="morning-experience" aria-labelledby="modes-title">
+            <div class="morning-story">
+                <div class="eyebrow">03 · MADE FOR YOUR MOMENTS</div>
+                <h2 id="modes-title">Set the scene.<br><span>Make it yours.</span></h2>
+                <p>Choose the devices and atmosphere you want, then save them as your own mode. Set up a movie night, a quiet evening, or a routine that fits the way you live.</p>
+
+                <ol class="morning-actions">
+                    <li><span>01</span><div><strong>Choose devices</strong><small>Pick what responds</small></div></li>
+                    <li><span>02</span><div><strong>Set the mood</strong><small>Shape your room's atmosphere</small></div></li>
+                    <li><span>03</span><div><strong>Save your mode</strong><small>Bring it all together in one touch</small></div></li>
+                </ol>
+            </div>
+
+            <div class="morning-film">
+                <video controls autoplay muted loop playsinline preload="metadata" aria-label="A homeowner enjoying a personalized movie-night scene">
+                    <source src="../assets/videos/experience/your-modes.mp4" type="video/mp4">
+                </video>
+                <div class="film-caption"><span>YOUR HOME, YOUR MODE</span><span>03 / DAY EXPERIENCE</span></div>
+            </div>
+        </section>
+
+
+        <!-- ================= FINAL ================= -->
+
+        <section class="experience-final">
+
+            <div class="eyebrow">
+                THE ZEAGXEL IDEA
+            </div>
+
+            <h2>
+                Less technology.
+                <span>More living.</span>
+            </h2>
+
+            <p>
+                The best smart home is the one you don't
+                have to think about.
+            </p>
+
+            <a
+                href="technology.html"
+                class="gold-button"
+            >
+                EXPLORE THE TECHNOLOGY
+                <span>→</span>
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="../js/experience.js"></script>
+    <script src="../js/animations.js"></script>
+
+</body>
+</html>
